@@ -31,8 +31,10 @@ elem.addEventListener('click', function(e) {
     if (elem.classList.contains === classEl.classList) {
         console.log(`Класс' ${e.target.className} '  присутствует в элементе ${e.target}`);
 
+
     } else {
-        console.log(`Класс отсутствует в элементе ${e.target}`);
+        console.log(`Класс отсутствует в элементе ${(e.target.tagName.toLowerCase())}`);
+
 
     }
 });
